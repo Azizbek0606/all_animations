@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto mono";
+}
+body{
+    background-color: #05182d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    border: 1px solid white;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.imgbx{
+    background: url(../img/1.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    offset: 4px transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbx > img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.iconbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 180px;
+    height: 50px;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: 1.7em;
+}
+.imgbx1{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+}
+.border_anime{
+    position: relative;
+    width: 304px;
+    height: 304px;
+    background: #062447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 999;
+}
+.border_anime::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 50%;
+    background: linear-gradient(90deg , #00ccff , #d400d4);
+    animation: anime 2s linear infinite;
+}
+.img1{
+    transform: translate(70px , -20px);
+}
+.img2{
+    transform: translate(-575px , -20px);
+}
+.img3{
+    transform: translate(-270px , -360px);
+}
+.img4{
+    transform: translate(-240px , 280px);
+}
+.img5{
+    transform: translate(-15px , 190px);
+}
+.img6{
+    transform: translate(-485px , 190px);
+}
+.img7{
+    transform: translate(-475px , -260px);
+}
+.img8{
+    transform: translate(-20px , -260px);
+}
+[on^="off"]{
+    opacity: 0.3;
+}
+.border_anime1{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #062447;
+    overflow: hidden;
+    position: relative;
+}
+.border_anime1::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 50%;
+    background: linear-gradient(90deg , #00ccff , #d400d4);
+    animation: anime1 4s linear infinite ;
+}
+.border_anime1::after{
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background: #05182d;
+    border-radius: 50%;
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anime1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
