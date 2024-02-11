@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto mono";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #01030b;
+}
+.card{
+    width: 350px;
+    height: 450px;
+    background: #060c21;
+    position: relative;
+    padding: 30px;
+    color: white;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px -20px 70px #060c219f,
+                -20px 20px 80px #3b03199b;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255 , 255 , 255 , 0.1);
+    left: 0;
+    top: 0;
+    box-shadow: 50px 0px 40px rgba(0, 0, 0, 0.066);
+}
+.card::after{
+    content: "";
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    background:linear-gradient(45deg , red , blue);
+    border-radius: 50% 0px 50% 0px;
+    z-index: -1;
+}
