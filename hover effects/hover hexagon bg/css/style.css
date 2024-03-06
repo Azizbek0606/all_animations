@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rpbptp mono";
+}
+body{
+    background-color: #111;
+    overflow: hidden;
+}
+.kub{
+    width: 90px;
+    height: 80px;
+    background: rgb(0,0,0);
+    clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.df1{
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    overflow-x: hidden !important;
+}
+.wrapper2{
+    width: 100%;
+    height: 112vh;
+    overflow: hidden !important;
+}
+.wrap_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.wrap_flex1{
+    margin-top: -43px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.wrap_flex1 > div{
+    width: 90px;
+    height: 80px !important;
+    background: rgb(0,0,0);
+}
+.left40{
+    margin-left: -20px;
+}
+.kub:hover{
+    background-color: red;
+    transition: 0s;
+}
