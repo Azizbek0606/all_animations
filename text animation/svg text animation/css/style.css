@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(45deg , #000000 , #170101 , #000000);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 385;
+    stroke-dashoffset: 385;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 417;
+    stroke-dashoffset: 417;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 415;
+    stroke-dashoffset: 415;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 332;
+    stroke-dashoffset: 332;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 329;
+    stroke-dashoffset: 329;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 386;
+    stroke-dashoffset: 386;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 317;
+    stroke-dashoffset: 317;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: store 5s ease forwards;
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 385;
+    stroke-dashoffset: 385;
+    animation: store 5s ease forwards;
+}
+
+@keyframes store {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
